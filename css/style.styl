@@ -2,7 +2,7 @@
 $tono-fuerte = #1B1D26
 $tono-medio = #425955
 $tono-suave = #778C7A
-$casi-blanco = #FFFFFF
+$casi-blanco = #FFF
 $gris = #BFBD9F
 
 /*KEYFRAMES*/
@@ -21,7 +21,6 @@ $gris = #BFBD9F
 	margin 0			
 	padding 0
 	box-sizing border-box
-	
 body
 	background $casi-blanco
 	width 100%
@@ -36,6 +35,8 @@ header
 	padding-top 1em
 	width 100%
 	z-index 2
+section 
+	overflow-x hidden
 .no-padding 
 	padding 0
 .social
@@ -66,40 +67,31 @@ header
 	background $casi-blanco
 	z-index 1
 	& h1, h2
-		font-size 3.6em
+		font-size 3.5em
 		margin 0
 		& span
 			color $tono-medio
 .logo-home
 	animation fade-in 3s normal forwards
 	margin 4em auto 2em
-.btn-1
+.btn-about
 	background none
 	font-size 2em
+	cursor pointer
 	margin 1em auto
-	padding .25em 1em
+	padding .75em 1em 0
+	text-align center
 	text-transform uppercase
 	display block
 	color $tono-fuerte
-	border solid .25em $tono-medio
-	position relative
-	box-sizing border-box
+	border solid .175em $tono-medio
 	width 220px
 	height 70px
-	animation fade-in 3s normal forwards
-	& span
-		position absolute
-		margin auto
-		left 0
-		right 0
-		top .75em
-		bottom 0
-.btn-1:hover
-	background $tono-medio
-	transition all .5s
-	& span
-		color $casi-blanco
-		
+	&:hover, :focus, :active
+		text-decoration none
+	&:before
+		background $tono-medio
+//ABOUT ME
 .img-bg-cont
 	position absolute
 	z-index 1
@@ -114,25 +106,50 @@ header
 	position relative
 	& .title
 		width 100%
+		text-transform uppercase
+		font-size .75em
 		color $casi-blanco
-		background $gris
+		background $tono-medio
 		position absolute
-		padding .5em 
-		top 6em
+		padding 2em .5em 
+		top 5em
 		z-index 3
+		& h2 
+			margin-right 3em
 	& .box-text
 		position absolute
 		background $casi-blanco
-		font-family: 'PT Serif', serif
+		font-family: 'Lora', serif;
 		z-index 2
-		font-size 1.6em
+		font-size 2em
 		top 2em
 		right 3em
-		padding 5em 1.5em 1em;
-		width 70%
-		border 4px solid $gris
-		
-	
+		padding 4em 1em 1em;
+		width 75%
+		border .175em solid $tono-medio
+.btn-col-right
+	background rgba(255, 255, 255, .75)
+	border-right solid .5em $tono-medio
+	font-size 2em
+	font-weight 700
+	text-transform uppercase
+	padding 1em
+	text-align right
+	width 70%
+	color $tono-fuerte
+	position absolute
+	right 0
+	&:hover
+		text-decoration none
+		color $tono-fuerte
+	&:before
+		background $casi-blanco
+.donde
+	top 7em
+.conocimientos
+	top 14em
+.hablemos
+	top 21em
 
 				
 @media(max-width:768px)

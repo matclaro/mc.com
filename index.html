@@ -5,15 +5,18 @@
 	<title>Matias Claro - Diseñador Frontend - Desarrollador Web</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="css/jquery-letterfx.min.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|PT+Serif:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery-letterfx.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet" rel="stylesheet" type="text/css" href="css/hover-min.css">
+	<link rel="stylesheet" rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Fonts -->
+	<link rel="stylesheet" rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700|Lora:400,700" rel="stylesheet">
 </head>
 <body>
-<!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<!--[if lt IE 10]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <!-- HEADER -->
 <header>
@@ -55,18 +58,18 @@
 	</div>
 	<h1 class="tagline text-center">Hola me llamo <span>Matias Claro</span></h1>
 	<h2 class="tagline-2 text-center">Soy <span>Diseñador Frontend</span> en Santiago de Chile</h2>
-	<button class="btn-1">
-		<span>Sobre mi</span>
-	</button>
+	<a class="btn-about hvr-sweep-to-bottom" data-scroll-nav="0">
+		Sobre mi	
+	</a>
 </section>
 <!-- /SECTION HOME -->
 
-<section class="full-height">
+<section class="full-height" data-scroll-index="0">
 	<div class="container-fluid no-padding">
-		<div class="img-bg-cont col-xs-12 text-right">
+		<div class="img-bg-cont col-xs-12 text-right" data-aos="fade-left">
 			<img src="images/img-sobre-mi.jpg" alt="Matias Claro">
 		</div>
-		<div class="about-cont">
+		<div class="about-cont" data-aos="fade-right">
 			<div class="col-md-6 no-padding col-left-about">
 				<div class="title text-right">
 					<h2>Sobre mi</h2>
@@ -76,18 +79,21 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id eaque reiciendis perferendis, veritatis architecto sequi molestiae, sapiente cupiditate optio ullam eius, non magnam aliquamunde? Ipsum molestiae iure qui repudiandae.</p>
 				</div>
 			</div>
-			<div class="col-md-6">				
+			<div class="col-md-6" data-aos="fade-right">	
+				<a href="#" class="btn-col-right donde hvr-sweep-to-left">Donde he trabajado</a>
+				<a href="#" class="btn-col-right conocimientos hvr-sweep-to-left">Conocimientos</a>
+				<a href="#" class="btn-col-right hablemos hvr-sweep-to-left">Hablemos</a>			
 			</div>
 		</div>
-		
 	</div>
 </section>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
 <script src="js/jquery-letterfx.min.js"></script>
 <script src='js/jquery.simple-sidebar.min.js'></script>
 <script src="js/bootstrap.min.js"></script>	
+<script src="js/aos.js"></script>
+<script src="js/scrollIt.min.js"></script>
 <script src="js/main.js"></script>	
 </body>
 </html>

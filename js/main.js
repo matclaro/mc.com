@@ -18,4 +18,11 @@ $(document).ready(function() {
     $(".tagline").letterfx({"fx":"fall","words":true,"timing":200});
     $(".tagline-2").letterfx({"fx":"fall","words":true,"timing":300});
 
+    $.scrollIt();
+    
+    AOS.init({
+        easing: 'ease-in-out-sine'
+    });
+
+    
 });	
